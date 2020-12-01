@@ -9,12 +9,12 @@ url: "https://hswsp.github.io" # the base hostname & protocol for your site, e.g
 # Author settings
 author: Starry Brook # add your name
 author-pic: profile.jpeg
-about-author: My name is Shengping. I’m a full-time full stack Engineer and part-time photographer
+about-author: My name is Shengping. I’m a full-time full stack engineer and part-time photographer
 
 # Contact links
-email: # Add your Email address
+email: hswspumn@163.com # Add your Email address
 phone: # Add your Phone number
-website: # Add your website, do not add http://
+website: www.cnblogs.com/satire/ # Add your website, do not add http://
 linkedin: # Add your Linkedin handle
 github: hswsp # Add your Github handle
 twitter: '@' # Add your Twitter handle
