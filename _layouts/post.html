@@ -22,7 +22,7 @@ layout: default
     <div class="page-image">
       <div class="cover-image" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : page.img}}) center no-repeat; background-size: cover;"></div>
     </div>
-     {% include toc.html html=content %}
+  
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
@@ -51,6 +51,7 @@ layout: default
       </div>
     </div> <!-- End Wrapper -->
   </article>
+  {% include toc.html html=content %}
   {% include search.html %}
   {% include footer.html %}
   
