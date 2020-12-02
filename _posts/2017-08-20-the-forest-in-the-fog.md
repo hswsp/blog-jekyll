@@ -6,8 +6,6 @@ description: You’ll find this post in your `_posts` directory. Go ahead and ed
 img: post-6.jpg # Add image post (optional)
 tags: [Blog, Meditation]
 author: # Add name author (optional)
-* awsl  
-{:toc}
 ---
 # Jmeter初级入门教程
 
