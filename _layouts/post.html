@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="flex-container">
   {% include header.html %}
-  {% include toc.html html=content %}
+
    <script type="text/javascript" src="/Blog/assets/js/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
       <script>
@@ -17,11 +17,12 @@ layout: default
               subSections: ($('.article-page > h1').length>0) ? 'h2' : 'h3',
           });
       </script>
+  
   <article class="article-page">
     <div class="page-image">
       <div class="cover-image" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : page.img}}) center no-repeat; background-size: cover;"></div>
     </div>
-    
+     {% include toc.html html=content %}
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
