@@ -7,7 +7,8 @@ img: post-6.jpg # Add image post (optional)
 tags: [Blog, Meditation]
 author: # Add name author (optional)
 ---
-# Jmeter初级入门教程
+* TOC
+{:toc}
 
 # 创建一个简单的自动化脚本
 
