@@ -37,7 +37,9 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
-
+kramdown:
+  parse_block_html: true
+  
 plugins:
   - jekyll-paginate
   - jekyll-feed
