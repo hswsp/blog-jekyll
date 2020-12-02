@@ -41,8 +41,7 @@ layout: default
   </article>
   {% include search.html %}
   {% include footer.html %}
-</div>
-<script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
       <script>
           const ct = document.querySelector(".post-content");  //".post-content"指向文章内容所在的div，需根据实际情况修改
@@ -55,3 +54,5 @@ layout: default
               subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3',
           });
       </script>
+</div>
+
