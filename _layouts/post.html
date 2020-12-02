@@ -48,7 +48,7 @@ layout: default
           const ct = document.querySelector(".post-content");  //".post-content"指向文章内容所在的div，需根据实际情况修改
           scrollnav.init(ct, {
               debug: false,
-              easingStyle: 'linear',
+              easingStyle: 'easeInQuad',
               //section为一级目录，subsection为二级目录
               //以下两行意为h3为一级目录，h4为二级目录（个人只需要一级目录，所以注释了二级目录）
               sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
