@@ -14,7 +14,10 @@ layout: default
           <h1 class="page-title">{{page.title}}</h1>
           <div class="page-date"><time datetime="{{page.date}}">{{page.date | date: '%Y, %b %d'}}</time></div>
         </div>
-        {{page.content | markdownify}}  
+        <div class="page-footer"></div>
+        <div class = "post-content">
+        {{page.content | markdownify}}
+      </div>  
         <div class="page-footer">
           <div class="page-tag">
             <span>Tags:</span>
@@ -42,13 +45,13 @@ layout: default
 <script type="text/javascript" src="/Blog/assets/js/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
       <script>
-          const ct = document.querySelector(".page-content");  //".post-content"指向文章内容所在的div，需根据实际情况修改
+          const ct = document.querySelector(".post-content");  //".post-content"指向文章内容所在的div，需根据实际情况修改
           scrollnav.init(ct, {
               debug: false,
               easingStyle: 'linear',
               //section为一级目录，subsection为二级目录
               //以下两行意为h3为一级目录，h4为二级目录（个人只需要一级目录，所以注释了二级目录）
-              sections: ($('.page-content > h1').length>0) ? 'h1' : 'h2',
-              subSections: ($('.page-content > h1').length>0) ? 'h2' : 'h3',
+              sections: ($('.ppost-content > h1').length>0) ? 'h1' : 'h2',
+              subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3',
           });
       </script>
