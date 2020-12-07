@@ -21,8 +21,7 @@ author: Starry # Add name author (optional)
 # 按保单号查询
 
 ```
-                     
-SELECT
+   SELECT
           a.cntr_no,
           a.pol_code,
           b.ipsn_no
@@ -43,7 +42,7 @@ SELECT
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2000120000R34300000023",
+"cntrNo":"1999370212S40000000406",
 "qry_opt":"0",
 "pageNum":"1"
 }
@@ -52,7 +51,7 @@ SELECT
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2000120000SI4015000027",
+"cntrNo":"1999370212S40000002116",
 "qry_opt":"0",
 "pageNum":"1"
 }
@@ -61,7 +60,7 @@ SELECT
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2001120000561015000022",
+"cntrNo":"1999370212S40000005443",
 "qry_opt":"0",
 "pageNum":"1"
 }
@@ -90,10 +89,10 @@ SELECT  distinct
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120107S81015000025",
+"cntrNo":"2003370210S64000001772",
 "qry_opt":"1",
-"branchNo":"120901",
-"agencyNo":"81001010",
+"branchNo":"370210",
+"agencyNo":"82001063",
 "pageNum":"1"
 
 }
@@ -101,10 +100,10 @@ SELECT  distinct
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120113S81015000150",
+"cntrNo":"2003370210S64000004825",
 "qry_opt":"1",
-"branchNo":"120113",
-"agencyNo":"81000006",
+"branchNo":"370221",
+"agencyNo":"U13",
 "pageNum":"1"
 }
 
@@ -112,10 +111,10 @@ SELECT  distinct
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120225S81015000026",
+"cntrNo":"2003370210S64000052844",
 "qry_opt":"1",
-"branchNo":"120225",
-"agencyNo":"82000096",
+"branchNo":"370210",
+"agencyNo":"81001101",
 "pageNum":"1"
 }
 
@@ -139,30 +138,30 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120107S81015000025",
+"cntrNo":"2004370210S74000031180",
 "qry_opt":"2",
-"branchNo":"120901",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"branchNo":"370210",
+"CNTR_EXPIRY_DATE":"2009-08-10 00:00:00"
 }
 
 {
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120107S81015000038",
+"cntrNo":"2003370220S64000003100",
 "qry_opt":"2",
-"branchNo":"120901",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"branchNo":"370220",
+"CNTR_EXPIRY_DATE":"2008-01-12 00:00:00"
 }
 
 {
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120224S81015000313",
+"cntrNo":"2003370221S64000007961",
 "qry_opt":"2",
-"branchNo":"120224",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"branchNo":"370221",
+"CNTR_EXPIRY_DATE":"2008-04-24 00:00:00"
 }
 
 {% endhighlight %}
