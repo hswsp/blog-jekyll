@@ -4,7 +4,7 @@
 
 ## Demo
 
-Check the theme in action [Demo](https://artemsheludko.github.io/adam-blog/)
+Check the theme in action [Demo](https://hswsp.github.io/Blog/)
 
 The main page would look like this:
 
