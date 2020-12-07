@@ -185,10 +185,10 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120112S81015000010",
+"cntrNo":"2003370210S64000000906",
 "qry_opt":"3",
-"branchNo":"120112",
-"agencyNo":"11018281",
+"branchNo":"370210",
+"agencyNo":"11020807",
 "pageNum":"1"
 }
 
@@ -196,10 +196,10 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120107S81015000041",
+"cntrNo":"2003370210S64000052844",
 "qry_opt":"3",
-"branchNo":"120901",
-"agencyNo":"12007004",
+"branchNo":"370212",
+"agencyNo":"12001011",
 "pageNum":"1"
 }
 
@@ -207,10 +207,10 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120225S81015000107",
+"cntrNo":"1999370212S43000003237",
 "qry_opt":"3",
-"branchNo":"120225",
-"agencyNo":"12008001",
+"branchNo":"370212",
+"agencyNo":"82001233",
 "pageNum":"1"
 }
 
