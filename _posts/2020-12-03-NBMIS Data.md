@@ -253,9 +253,9 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120113S81015000011 ",
+"cntrNo":"2006120224S81500000203 ",
 "qry_opt":"2",
-"branchNo":"120113 ",
+"branchNo":"120224",
 "CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
 }
 
@@ -263,10 +263,10 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120113S81015000024 ",
+"cntrNo":"2006120231S74015000030 ",
 "qry_opt":"2",
-"branchNo":"120113 ",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"branchNo":"120232 ",
+"CNTR_EXPIRY_DATE":"2016-01-04 00:00:00"
 }
 
 {
