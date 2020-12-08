@@ -27,7 +27,7 @@ author: Starry # Add name author (optional)
           b.ipsn_no
    FROM std_contract a,cntr_basic_state b
    WHERE a.cntr_id=b.cntr_id
-   and (master_cntr_id in (select cntr_id from std_contract where  sales_channel in ( 'SP' ,'OA')))
+   and (master_cntr_id in (select cntr_id from std_contract where  sales_channel in ( 'SP' ,'OA') and cntr_stat not in ('O','T')))
    UNION
    SELECT
           a.cntr_no,
@@ -35,7 +35,7 @@ author: Starry # Add name author (optional)
           b.ipsn_no
    FROM std_contract a,cntr_basic_state b
    WHERE a.cntr_id=b.cntr_id
-   and sales_channel in ( 'SP', 'OA');
+   and sales_channel in ( 'SP', 'OA') and a.cntr_stat not in ('O','T');
 ```
 ### 八版青岛：
 
@@ -116,7 +116,7 @@ SELECT  distinct
                      and b.agnet_post_branch=c.n_sales_branch_no
                      and b.agent_post_no=c.n_sales_code
                      and c.cntr_id = d.cntr_id
-                     and c.sales_channel in ('SP', 'OA')
+                     and c.sales_channel in ('SP', 'OA') and c.cntr_stat not in ('O','T')
 ```
 
 ### 八版青岛：
@@ -204,7 +204,7 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
                                        b.ipsn_no
                                  FROM std_contract a,cntr_basic_state b
                                 WHERE a.cntr_id=b.cntr_id
-                                  and sales_channel in ('SP', 'OA');
+                                  and sales_channel in ('SP', 'OA') and a.cntr_stat not in ('O','T');
 ```
 
 保证cntr_expiry_date在 start_date和end_date之间即可
@@ -291,7 +291,7 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
                      and b.agent_post_no=c.n_sales_code
                      and b.channel_type in ('B','#')
                      and c.cntr_id = d.cntr_id
-                     and c.sales_channel in ('SP', 'OA');
+                     and c.sales_channel in ('SP', 'OA') c.cntr_stat not in ('O','T');
 ```
 ### 八版青岛：
 
