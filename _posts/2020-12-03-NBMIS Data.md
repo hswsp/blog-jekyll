@@ -37,6 +37,8 @@ author: Starry # Add name author (optional)
    WHERE a.cntr_id=b.cntr_id
    and sales_channel in ( 'SP', 'OA');
 ```
+### 八版青岛：
+
 {% highlight ruby %}
 {
 "sysNo" :"1",
@@ -68,6 +70,40 @@ author: Starry # Add name author (optional)
 {% endhighlight %}
 
 
+
+### 八版天津：
+
+{% highlight ruby %}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2000120000R34300000023",
+"qry_opt":"0",
+"pageNum":"1"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2000120000SI4015000027",
+"qry_opt":"0",
+"pageNum":"1"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2001120000561015000022",
+"qry_opt":"0",
+"pageNum":"1"
+}
+
+{% endhighlight %}
+
+
 # 按营销员查询
 
 ```
@@ -82,6 +118,8 @@ SELECT  distinct
                      and c.cntr_id = d.cntr_id
                      and c.sales_channel in ('SP', 'OA')
 ```
+
+### 八版青岛：
 
 {% highlight ruby %}
 
@@ -120,6 +158,45 @@ SELECT  distinct
 
 {% endhighlight %}
 
+### 八版天津：
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120111S81015000035 ",
+"qry_opt":"1",
+"branchNo":"120111 ",
+"agencyNo":"81000042",
+"pageNum":"1"
+
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120107S81015000025 ",
+"qry_opt":"1",
+"branchNo":"120901",
+"agencyNo":"81001010",
+"pageNum":"1"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120231S81015000151 ",
+"qry_opt":"1",
+"branchNo":"120232 ",
+"agencyNo":"zj0074",
+"pageNum":"1"
+}
+
+{% endhighlight %}
+
 # 按满期日期查询
 
 ```
@@ -131,6 +208,8 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 ```
 
 保证cntr_expiry_date在 start_date和end_date之间即可
+
+### 八版青岛：
 
 {% highlight ruby %}
 
@@ -166,6 +245,42 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 
 {% endhighlight %}
 
+### 八版天津：
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120113S81015000011 ",
+"qry_opt":"2",
+"branchNo":"120113 ",
+"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120113S81015000024 ",
+"qry_opt":"2",
+"branchNo":"120113 ",
+"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120107S81015000025 ",
+"qry_opt":"2",
+"branchNo":"120901 ",
+"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+}
+
+{% endhighlight %}
+
 # 按网点号查询
 
 ```
@@ -178,6 +293,8 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
                      and c.cntr_id = d.cntr_id
                      and c.sales_channel in ('SP', 'OA');
 ```
+### 八版青岛：
+
 {% highlight ruby %}
 
 {
@@ -210,6 +327,47 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 "qry_opt":"3",
 "branchNo":"370212",
 "agencyNo":"82001233",
+"pageNum":"1"
+}
+
+{% endhighlight %}
+
+
+
+### 八版天津：
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120231S74015000043 ",
+"qry_opt":"3",
+"branchNo":"120232 ",
+"agencyNo":"11010154",
+"pageNum":"1"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120231S81015000067 ",
+"qry_opt":"3",
+"branchNo":"120232",
+"agencyNo":"11018442",
+"pageNum":"1"
+}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"cntrNo":"2006120221S81015000019 ",
+"qry_opt":"3",
+"branchNo":"120221",
+"agencyNo":"11020507",
 "pageNum":"1"
 }
 
