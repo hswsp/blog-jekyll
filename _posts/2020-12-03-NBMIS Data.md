@@ -372,3 +372,30 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 }
 
 {% endhighlight %}
+
+# 注意事项
+
+测试环境有些数据不对：
+
+1. 可能`O_Sales_code`或者`N_Sales_code`不是八位。
+
+2. 在`AGENT_POST_MCLERK`表下面有些缺乏自营网点。目前会在`Error_Message`里面提示对应的保单号（老接口没有此逻辑，需要修改测试数据，例如：
+   - Step 1
+   
+      ```sql
+      select * from cl_biz1.agent_post_reg where agent_post_branch = '120231'
+      ```
+     找到一个自营网点号，例如`10810` 
+   - step 2
+   
+     ```sql
+     select * from cl_biz1.AGENT_POST_MCLERK where mclerk_branch_no = '120231' and mclerk_no = '092'
+     ```
+     
+   - Step 3
+   
+     ```sql
+     insert into cl_biz1.GENT_POST_MCLERK values('10810','120231','092','1200008230')
+     ```
+   
+     
