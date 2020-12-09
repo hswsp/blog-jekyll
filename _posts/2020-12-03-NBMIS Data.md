@@ -209,6 +209,8 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 
 保证cntr_expiry_date在 start_date和end_date之间即可
 
+**Note** 天津的测试数据库仅仅修复了 2020-10-01至2021-04-10之间的数据，共229条
+
 ### 八版青岛：
 
 {% highlight ruby %}
@@ -253,30 +255,36 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120224S81500000203 ",
 "qry_opt":"2",
 "branchNo":"120224",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"insexprtStartDate":"2020-10-01",
+"insexprtEndDate":"2021-04-10"
 }
 
 {
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120231S74015000030 ",
 "qry_opt":"2",
-"branchNo":"120232 ",
-"CNTR_EXPIRY_DATE":"2016-01-04 00:00:00"
+"branchNo":"120111",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"insexprtStartDate":"2020-10-01",
+"insexprtEndDate":"2021-04-10"
 }
 
 {
 "sysNo" :"1",
 "provinceBranchNo" :"120000",
 "dataSource":"",
-"cntrNo":"2006120107S81015000025 ",
 "qry_opt":"2",
-"branchNo":"120901 ",
-"CNTR_EXPIRY_DATE":"2011-01-04 00:00:00"
+"branchNo":"120221",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"insexprtStartDate":"2020-10-01",
+"insexprtEndDate":"2021-04-10"
 }
 
 {% endhighlight %}
