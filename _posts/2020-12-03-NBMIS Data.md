@@ -13,10 +13,33 @@ author: Starry # Add name author (optional)
 {:toc}
 
 
+**Note：**
 
-**Note： 如果不对的话，将"agencyNo"改成 "branchNo"（六位）+"agencyNo"（八位，不够前面补0）格式**
+- **如果不对的话，将"agencyNo"改成 "branchNo"（六位）+"agencyNo"（八位，不够前面补0）格式**
 
+- 必须要有的字段为：
 
+  {% highlight ruby %}
+
+  {
+
+  "sysNo" :"1",
+
+  "provinceBranchNo" :"120000",
+
+  "dataSource":"",
+
+  "qry_opt":"?",
+
+  "reqSysCode":"NBMIS",
+
+  "pageNum":"1"
+
+  }
+
+  {% endhighlight %}
+
+  其他字段请根据查询酌情增加
 
 # 按保单号查询
 
