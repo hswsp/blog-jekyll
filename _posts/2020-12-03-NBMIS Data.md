@@ -379,7 +379,7 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 
 1. 可能`O_Sales_code`或者`N_Sales_code`不是八位。
 
-2. 在`AGENT_POST_MCLERK`表下面有些缺乏自营网点。目前会在`Error_Message`里面提示对应的保单号（老接口没有此逻辑，需要修改测试数据，例如：
+2. 在`AGENT_POST_MCLERK`表下面有些缺乏自营网点。目前会在`Error_Message`里面提示对应的保单号（老接口没有此逻辑)，需要修改测试数据，例如：
    - Step 1
    
       ```sql
