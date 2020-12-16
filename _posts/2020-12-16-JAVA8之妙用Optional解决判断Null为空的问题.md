@@ -13,7 +13,7 @@ author: Starry # Add name author (optional)
 
 在文章的开头，先说下NPE问题，NPE问题就是，我们在开发中经常碰到的NullPointerException.假设我们有两个类，他们的UML类图如下图所示
 
-[![o_optional1.png](http://www.ibloger.net/zb_users/upload/2018/06/201806161529155706180997.png)](http://www.ibloger.net/zb_users/upload/2018/06/201806161529155706180997.png)
+![o_optional1.png]({{site.url}}/Blog/assets/post_img/2020_12_16.png)
 
 在这种情况下，有如下代码
 
