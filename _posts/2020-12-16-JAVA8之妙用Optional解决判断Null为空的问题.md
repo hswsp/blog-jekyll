@@ -46,7 +46,7 @@ if(user!=null){
 
 先说明一下，`Optional(T value)`，即构造函数，它是private权限的，不能由外部调用的。其余三个函数是public权限，供我们所调用。那么，Optional的本质，就是内部储存了一个真实的值，在构造的时候，就直接判断其值是否为空。好吧，这么说还是比较抽象。直接上`Optional(T value)`构造函数的源码，如下图所示
 
-[![o_optional2png.png](http://www.ibloger.net/zb_users/upload/2018/06/201806161529155719187498.png)](http://www.ibloger.net/zb_users/upload/2018/06/201806161529155719187498.png)
+![o_optional2.png]({{site.url}}/Blog/assets/post_img/202012161.png)
 
 那么，**of(T value)**的源码如下
 
