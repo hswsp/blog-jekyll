@@ -4,7 +4,7 @@ title: JAVA8之妙用Optional解决判断Null为空的问题
 date: 2020-12-12 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: OIP.jpg # Add image post (optional)
-tags: [Blog, Algorithm]
+tags: [Blog, JAVA]
 author: Starry # Add name author (optional)
 ---
 * TOC
