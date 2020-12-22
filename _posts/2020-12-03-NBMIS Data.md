@@ -13,6 +13,8 @@ author: Starry # Add name author (optional)
 {:toc}
 
 
+# NBMIS保单查询
+
 **Note：**
 
 - **如果不对的话，将"agencyNo"改成 "branchNo"（六位）+"agencyNo"（八位，不够前面补0）格式**
@@ -41,7 +43,7 @@ author: Starry # Add name author (optional)
 
   其他字段请根据查询酌情增加
 
-# 按保单号查询
+## 按保单号查询
 
 ```
    SELECT
@@ -127,7 +129,7 @@ author: Starry # Add name author (optional)
 {% endhighlight %}
 
 
-# 按营销员查询
+## 按营销员查询
 
 ```
 SELECT  distinct
@@ -220,7 +222,7 @@ SELECT  distinct
 
 {% endhighlight %}
 
-# 按满期日期查询
+## 按满期日期查询
 
 ```
 SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
@@ -312,7 +314,7 @@ SELECT a.cntr_no,a.cntr_expiry_date,a.n_sales_branch_no,
 
 {% endhighlight %}
 
-# 按网点号查询
+## 按网点号查询
 
 ```
 SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_reg b,
@@ -404,7 +406,7 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
 
 {% endhighlight %}
 
-# 注意事项
+## 注意事项
 
 测试环境有些数据不对：
 
@@ -430,3 +432,45 @@ SELECT distinct c.cntr_no,b.agnet_post_branch,b.agent_post_no FROM agent_post_re
      ```
    
      
+
+# NBMIS更新营销员
+
+{% highlight ruby %}
+{
+"provBranchNo" :"120000",
+"reqSysCode" :"NBMIS",
+"eiqAgencyCntrInfoList":[{
+"sysNo" :"1",
+"cntrNo":"2011120111S660150173199",
+"polCode":"22",
+"agencyBranchNo":"110103",
+"agencyNo":"11010300000B05"
+},
+{
+"sysNo" :"1",
+"cntrNo":"2011120111454015017391",
+"polCode":"454",
+"agencyBranchNo":"120000",
+"agencyNo":"12000000001012"
+},
+{
+"sysNo" :"1",
+"cntrNo":"2011120232453015009632",
+"polCode":"453",
+"agencyBranchNo":"120000",
+"agencyNo":"12000011200537"
+},
+{
+"sysNo" :"6",
+"cntrNo":"1997410300SA9000087248",
+"polCode":"SA9",
+"agencyBranchNo":"120000",
+"agencyNo":"120000111L5264"
+}]
+}
+	
+{% endhighlight %}
+
+**NOTE**
+- 目前测试了 "provBranchNo" :"120000"（sysNo" :"1" 的是天津的数据库）
+- 后俩数据是有主险和附加险的数据
