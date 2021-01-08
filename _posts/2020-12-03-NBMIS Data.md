@@ -20,15 +20,17 @@ author: Starry # Add name author (optional)
 {% highlight ruby %}
 
 {
-			"sysNo" :"1",
-			"provinceBranchNo" :"120000",
-			"dataSource":"",
-			"qry_opt":"0",
-			"reqSysCode":"NBMIS",
-			"pageNum":"1",
-			"cntrNo":"2002120109S71000078904"
+
+"sysNo" :"1",
+		"provinceBranchNo" :"120000",
+		"dataSource":"",
+		"qry_opt":"0",
+		"reqSysCode":"NBMIS",
+		"pageNum":"1",
+		"cntrNo":"2002120109S71000078904"
 		}
-		{
+
+{
 			"sysNo" :"1",
 			"provinceBranchNo" :"120000",
 			"dataSource":"",
