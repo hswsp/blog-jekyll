@@ -13,6 +13,144 @@ author: Starry # Add name author (optional)
 {:toc}
 
 
+# 更新数据（2021-01-08）
+
+## 按保单号查询
+
+{% highlight ruby %}
+
+{
+		"sysNo" :"1",
+		"provinceBranchNo" :"120000",
+		"dataSource":"",
+		"qry_opt":"0",
+		"reqSysCode":"NBMIS",
+		"pageNum":"1",
+		"cntrNo":"2002120109S71000078904"
+		}
+		{
+			"sysNo" :"1",
+			"provinceBranchNo" :"120000",
+			"dataSource":"",
+			qry_opt":"0",
+			"reqSysCode":"NBMIS",
+			"pageNum":"1",
+			"cntrNo":"2002120109S71000080000"
+		}
+
+{% endhighlight %}
+
+## 按网点号查询
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"qry_opt":"1",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"agencyNo":"12022111020501"
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"qry_opt":"1",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"agencyNo":"12022181000047"
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"qry_opt":"1",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"agencyNo":"12022181000016"
+}
+
+{% endhighlight %}
+
+## 按满期日期查询
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"qry_opt":"2",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120000",
+"insexprtStartDate":"2020-10-01",
+"insexprtEndDate":"2021-03-01"
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"qry_opt":"2",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"insexprtStartDate":"2021-01-08",
+"insexprtEndDate":"2021-08-01"
+}
+
+{% endhighlight %}
+
+
+
+## 按营销员查询
+
+{% highlight ruby %}
+
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"ext04":"APP",
+"qry_opt":"3",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"agencyNo":"12022181000047"
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"ext04":"APP",
+"qry_opt":"3",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120221",
+"agencyNo":"12022181000016"
+}
+{
+"sysNo" :"1",
+"provinceBranchNo" :"120000",
+"dataSource":"",
+"ext04":"APP",
+"qry_opt":"3",
+"reqSysCode":"NBMIS",
+"pageNum":"1",
+"branchNo":"120109",
+"agencyNo":"12010981000032"
+}
+
+{% endhighlight %}
+
+
+**Update数据没变，还能使用**
+
 # NBMIS保单查询
 
 **Note：**
@@ -127,6 +265,8 @@ author: Starry # Add name author (optional)
 }
 
 {% endhighlight %}
+
+
 
 
 ## 按营销员查询
