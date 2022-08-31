@@ -3,7 +3,7 @@ email: hswswpumn@163com.
 description: > # this means to ignore newlines until "baseurl:"
   我唯一锲而不舍，愿意以自己的生命去努力的，只不过是保守我个人的心怀意念，在我有生之日，做一个真诚的人，不放弃对生活的热爱和执着，在有限的时空里，过无限广大的日子。
 permalink: ':title/'
-baseurl: "/Blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog-jekyll" # the subpath of your site, e.g. /blog
 url: "https://hswsp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
